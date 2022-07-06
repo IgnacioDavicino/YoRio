@@ -1,0 +1,73 @@
+.conocenos__seccion1 {
+    h3{
+        color: #2ecc71;
+    }
+    display: flex;
+    flex-direction: row;
+    font-family: R regular;
+}
+
+.conocenos__seccion2 {
+    h3{
+        color: #2ecc71;
+    }
+    display: flex;
+    flex-direction: row;
+    font-family: R regular;
+    background: #0066b2;
+    p{
+        color: white;
+    }
+}
+
+.conocenos__seccion3 {
+    h3{
+        color: #2ecc71;
+    }
+    display: flex;
+    flex-direction: row;
+    font-family: R regular;
+}
+
+
+.conocenos__img {
+    width: 40%;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .conocenos__seccion1{
+        flex-direction: column;
+    }
+    .conocenos__seccion2{
+        flex-direction: column;
+    }
+    .conocenos__seccion3{
+        flex-direction: column;
+    }
+    
+    .conocenos__img {
+        width: 100%;
+    }
+    
+    
+  }
+  
+  @media screen and (max-width: 480px) {
+    .conocenos__seccion1{
+        flex-direction: column;
+    }
+    .conocenos__seccion2{
+        flex-direction: column;
+    }
+    .conocenos__seccion3{
+        flex-direction: column;
+    }
+
+    .conocenos__img {
+        width: 100%; }
+
+ }

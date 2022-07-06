@@ -1,0 +1,132 @@
+// INDEX HEADER
+@import "header";
+
+// INDEX
+@import "index";
+
+// CONOCENOS 
+
+@import "conocenos";
+
+// CONTACTO
+
+@import "contacto";
+
+
+@font-face {
+    font-family: R regular;
+    src: url(../font/Raleway-Regular.ttf);
+  }
+@font-face {
+    font-family: R extrabold;
+    src: url(../font/Raleway-ExtraBold.ttf);
+    }
+@font-face {
+      font-family: bodoni;
+      src: url(../font/bodoni-bd-bt/BodonBd.ttf);
+  }
+
+  *{
+      box-sizing: border-box;
+  }
+// DIV CONTAINER1 DEL MAIN DE TODAS LAS PAGES.
+.main{
+    .container1{
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        .container1__texto{
+            width:fit-content;
+            position: relative;
+            top:500px; /*(para que se aplique tiene que estar posicionado SI o SI, sino no funciona*/
+            margin-left: auto;
+            padding-right: 20px;
+            font-family: R extrabold;
+            font-weight: 800;
+            font-size: 70px;
+            line-height: 70px;
+            color: #FFFFFF;
+            text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.9);
+        }
+    }
+   
+}    
+
+// IMAGEN DE FONDE DE CADA PAGE.
+// INDEX.
+#contentIndex{
+    background-image: url(../img/tinified/index.jpg);
+}
+
+//CONOCENOS.
+#contentConocenos{
+    background-image: url(../img/tinified/quienesSomos.jpg);
+
+}
+
+//CAMPANIAS.
+#contentCampanias{
+    background-image: url(../img/tinified/campanias.jpg);
+
+}
+
+//CONTACTO.
+#contentContacto{
+    background-image: url(../img/tinified/contacto.jpg);
+
+}
+
+@media screen and (max-width: 1024px) {
+    .main{
+        .container1{
+            .container1__texto{
+                top: 400px;
+
+            }
+        }
+    }
+  }
+
+@media screen and (max-width: 920px ) {
+    .main{
+        .container1{
+            height: 60vh;
+
+            .container1__texto{
+                font-size: 60px;
+                line-height: 60px;
+                top: 250px;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+        .container1{
+            height: 50vh;
+
+            .container1__texto{
+                font-size: 50px;
+                line-height: 50px;
+                top: 200px;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px ) {
+    .main{
+        .container1{
+            height: 40vh;
+            .container1__texto{
+                font-size: 30px;
+                line-height: 30px;
+                top: 200px;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,368 @@
+@font-face {
+  font-family: R regular;
+  src: url(../font/Raleway-Regular.ttf); }
+
+@font-face {
+  font-family: R extrabold;
+  src: url(../font/Raleway-ExtraBold.ttf); }
+
+@font-face {
+  font-family: R thin;
+  src: url(../font/Raleway-Thin.ttf); }
+
+@font-face {
+  font-family: bodoni;
+  src: url(../font/bodoni-bd-bt/BodonBd.ttf); }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  height: 10vh;
+  width: 100vw;
+  margin-top: 20px; }
+  .header .header__logo {
+    height: 50px;
+    margin-left: 30px; }
+  .header .nav__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    padding: 0%;
+    justify-content: space-between; }
+    .header .nav__list .nav__list-link {
+      color: #FBF8F8;
+      text-decoration: none;
+      font-family: R regular;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      font-variant: small-caps;
+      text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.9); }
+  .header #header__button {
+    height: 45px;
+    margin-right: 30px;
+    color: #FBF8F8;
+    font-family: R regular;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.9); }
+
+@media screen and (max-width: 1024px) {
+  .header .nav__list {
+    width: 450px; } }
+
+@media screen and (max-width: 920px) {
+  .header .nav__list {
+    width: 350px; } }
+
+@media screen and (min-width: 768px) {
+  .toggle-menu {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .header .header__logo {
+    height: 40px;
+    margin: 20px; }
+  .header .toggle-menu {
+    width: 40px;
+    filter: invert(1);
+    cursor: pointer; }
+  .header .nav__list {
+    margin-top: 30px;
+    margin-right: 20px;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    transition: transform 0.4s;
+    transform: translateY(-140%);
+    /*esto hace desaparecer el menu y que solo se vea el menu hamburguesa*/ }
+  .header .main-menu--show {
+    transform: translateY(0); }
+  .header #header__button {
+    display: none; } }
+
+@media screen and (max-width: 480px) {
+  .header .header__logo {
+    height: 30px; }
+  .header .nav__list-link {
+    font-size: 10px; } }
+
+.cards__section {
+  display: flex;
+  text-align: center; }
+
+.cards__titulo {
+  font-size: 20px;
+  color: #2ecc71;
+  text-decoration: none;
+  font-family: R regular; }
+
+p {
+  font-family: R regular; }
+
+.bannerVideo {
+  font-family: R regular;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .bannerVideo video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; }
+  .bannerVideo .contenidovideo {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center; }
+  .bannerVideo h1 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: #2ecc71;
+    font-family: R extrabold;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 70px;
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.9); }
+  .bannerVideo p {
+    font-size: 2em;
+    color: #0066b2;
+    font-family: R extrabold;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 70px;
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.9); }
+  .bannerVideo .buttonvideo {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none; }
+  .bannerVideo .buttonvideo:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px); }
+  .bannerVideo .buttonvideo:active {
+    transform: translateY(-1px); }
+  .bannerVideo a {
+    text-decoration: none; }
+
+.footer__main {
+  font-family: R regular; }
+
+.footer__copyr {
+  background-color: #21D192; }
+
+.conocenos__seccion1 {
+  display: flex;
+  flex-direction: row;
+  font-family: R regular; }
+  .conocenos__seccion1 h3 {
+    color: #2ecc71; }
+
+.conocenos__seccion2 {
+  display: flex;
+  flex-direction: row;
+  font-family: R regular;
+  background: #0066b2; }
+  .conocenos__seccion2 h3 {
+    color: #2ecc71; }
+  .conocenos__seccion2 p {
+    color: white; }
+
+.conocenos__seccion3 {
+  display: flex;
+  flex-direction: row;
+  font-family: R regular; }
+  .conocenos__seccion3 h3 {
+    color: #2ecc71; }
+
+.conocenos__img {
+  width: 40%;
+  height: auto; }
+
+@media screen and (max-width: 768px) {
+  .conocenos__seccion1 {
+    flex-direction: column; }
+  .conocenos__seccion2 {
+    flex-direction: column; }
+  .conocenos__seccion3 {
+    flex-direction: column; }
+  .conocenos__img {
+    width: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .conocenos__seccion1 {
+    flex-direction: column; }
+  .conocenos__seccion2 {
+    flex-direction: column; }
+  .conocenos__seccion3 {
+    flex-direction: column; }
+  .conocenos__img {
+    width: 100%; } }
+
+.contacto__seccion {
+  background: #0066b2;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  border-radius: 30px; }
+  .contacto__seccion a {
+    text-decoration: none;
+    color: #2ecc71; }
+
+h3 {
+  color: #2ecc71; }
+
+.seccion__info {
+  list-style: none; }
+
+.seccion__buttonlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.donatebutton {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden; }
+
+.donatebutton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms; }
+
+.donatebutton:hover {
+  color: #e8e8e8; }
+
+.donatebutton:hover::before {
+  width: 100%; }
+
+@media screen and (max-width: 768px) {
+  .contacto__seccion {
+    flex-direction: column; }
+  .seccion__buttonlist {
+    flex-direction: column; } }
+
+@media screen and (max-width: 480px) {
+  .contacto__seccion {
+    flex-direction: column; }
+  .seccion__buttonlist {
+    flex-direction: column; } }
+
+@font-face {
+  font-family: R regular;
+  src: url(../font/Raleway-Regular.ttf); }
+
+@font-face {
+  font-family: R extrabold;
+  src: url(../font/Raleway-ExtraBold.ttf); }
+
+@font-face {
+  font-family: bodoni;
+  src: url(../font/bodoni-bd-bt/BodonBd.ttf); }
+
+* {
+  box-sizing: border-box; }
+
+.main .container1 {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover; }
+  .main .container1 .container1__texto {
+    width: fit-content;
+    position: relative;
+    top: 500px;
+    /*(para que se aplique tiene que estar posicionado SI o SI, sino no funciona*/
+    margin-left: auto;
+    padding-right: 20px;
+    font-family: R extrabold;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 70px;
+    color: #FFFFFF;
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.9); }
+
+#contentIndex {
+  background-image: url(../img/tinified/index.jpg); }
+
+#contentConocenos {
+  background-image: url(../img/tinified/quienesSomos.jpg); }
+
+#contentCampanias {
+  background-image: url(../img/tinified/campanias.jpg); }
+
+#contentContacto {
+  background-image: url(../img/tinified/contacto.jpg); }
+
+@media screen and (max-width: 1024px) {
+  .main .container1 .container1__texto {
+    top: 400px; } }
+
+@media screen and (max-width: 920px) {
+  .main .container1 {
+    height: 60vh; }
+    .main .container1 .container1__texto {
+      font-size: 60px;
+      line-height: 60px;
+      top: 250px; } }
+
+@media screen and (max-width: 768px) {
+  .main .container1 {
+    height: 50vh; }
+    .main .container1 .container1__texto {
+      font-size: 50px;
+      line-height: 50px;
+      top: 200px; } }
+
+@media screen and (max-width: 480px) {
+  .main .container1 {
+    height: 40vh; }
+    .main .container1 .container1__texto {
+      font-size: 30px;
+      line-height: 30px;
+      top: 200px; } }
