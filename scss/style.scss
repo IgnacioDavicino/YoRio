@@ -13,6 +13,11 @@
 @import "contacto";
 
 
+
+.main{
+    font-family: R regular;
+}
+
 @font-face {
     font-family: R regular;
     src: url(../font/Raleway-Regular.ttf);
@@ -35,7 +40,7 @@
 .main{
     .container1{
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         background-size: cover;
         .container1__texto{
             width:fit-content;
