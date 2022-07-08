@@ -97,9 +97,66 @@ img {
   .header .nav__list-link {
     font-size: 10px; } }
 
+.section-one {
+  background-color: #5FC18B;
+  position: relative;
+  padding: 200px 0 350px;
+  font-family: R regular; }
+  .section-one .section-one__title {
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #0066b2; }
+  .section-one .section-one__descr {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center; }
+
+.section-two {
+  background-color: #44a36f;
+  padding: 100px 0 200px;
+  position: relative;
+  z-index: 10;
+  font-family: R regular; }
+  .section-two .section-two__title {
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    color: #0066b2; }
+  .section-two .section-two__descr {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center; }
+
+.separator {
+  bottom: -4px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%; }
+
+@media screen and (max-width: 767px) {
+  .section-one {
+    padding: 130px 0 190px; }
+  .separator {
+    bottom: -110px; }
+    .separator .separator__svg {
+      left: -20%;
+      position: relative;
+      transform: rotate(15deg);
+      width: 140%; } }
+
 .cards__section {
   display: flex;
-  text-align: center; }
+  text-align: center;
+  justify-content: center; }
 
 .cards__titulo {
   font-size: 20px;
@@ -176,7 +233,15 @@ p {
   font-family: R regular; }
 
 .footer__copyr {
-  background-color: #21D192; }
+  background-color: #5FC18B; }
+
+@media screen and (max-width: 768px) {
+  .cards__section {
+    flex-direction: column; } }
+
+@media screen and (max-width: 480px) {
+  .cards__section {
+    flex-direction: column; } }
 
 .conocenos__seccion1 {
   display: flex;
